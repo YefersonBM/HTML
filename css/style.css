@@ -6,9 +6,9 @@
   --gris: #757575;
 
 }
-/* 1rem = 10px si aplicamos este codigo de html, body*/
+/*Globales*/
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /*hack para el box-model*/
   box-sizing: border-box;
 }
 *, *::before, *::after {
@@ -16,33 +16,14 @@ html {
 }
 
 body {
-  font-size: 16px;
+  font-size: 16px;/* 1rem = 10px */
   font-family: 'Krub', sans-serif;
-}
-/*alineamos y le damos forma al titulo de la pagina*/
-h1 {
- font-size: 3.8rem;
-}
-h2{
-font-size: 2.8rem;
-}
-h3{
-font-size: 1.8rem;
-}
-
-h1,h2,h3 {
-  text-align: center;
-}
-/*achicamos un poco la ultima palabra para darle estilo a la pagina*/
-.titulo span {
-  font-size: 1.5rem;
 }
 
 .contenedor {
   max-width: 120rem;
   margin: 0 auto;
 }
-
 .boton {
   background-color: var(--secundario);
   color: var(--blanco);
@@ -56,13 +37,32 @@ h1,h2,h3 {
   width: 80%;
   text-align: center;
 }
-
 @media (min-width: 768px) {
    .boton {
      width: auto;
    }
  }
 
+/*Tipografia*/
+h1 {
+ font-size: 3.8rem;
+}
+h2{
+font-size: 2.8rem;
+}
+h3{
+font-size: 1.8rem;
+}
+h1,h2,h3 {
+  text-align: center;
+}
+
+/*Titulos*/
+.titulo span {
+  font-size: 1.5rem;
+}
+
+/*Navegacion Principal*/
 .nav-bg {
   background-color: var(--secundario);
 }
@@ -90,6 +90,7 @@ flex-direction: column;
   color: var(--oscuro);
 }
 
+/*Hero*/
 .hero {
   background-image: url(../img/hero5.jpg);
   background-repeat: no-repeat;
@@ -117,7 +118,7 @@ flex-direction: column;
 
 }
 
-.ubicacion {
+.contenido-hero .ubicacion {
   display: flex;
   align-items: flex-end;
 }
